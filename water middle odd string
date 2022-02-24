@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    char water[100],a[100];
+    scanf("%water" ,water);
+    int len,mid,k=0;
+    len=strlen(water);
+    mid=len/2;
+    for(int i=mid;i<strlen(water);i++)
+    a[k++]=water[i];
+    for(int i=0;<strlen(water);i++)
+    a[k++]=water[i++];
+    for (int i=0;i<strlen(water);i++){
+      k=0;
+      for(int j=0;j<strlen(water);j++){
+        if(j<len-1)
+        printf("%c",a[k++]);
+      }
+      len--;
+      printf("\n");
+    }
+    return 0;
+    
+    
+}
